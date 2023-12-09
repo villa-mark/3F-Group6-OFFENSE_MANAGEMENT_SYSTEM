@@ -3,6 +3,7 @@ package offense.management.admin;
 import javax.swing.*;
 import java.awt.*;
 
+
 class AdminView{
 
   static void addLabel(JPanel panel, JLabel label, int x, int y, int width, int height, int fontSize, String fontStyle, int color){
@@ -60,5 +61,16 @@ class AdminView{
       JLabel label = new JLabel(img);
       label.setBounds(x, y, img.getIconWidth(), img.getIconHeight());
       panel.add(label);
+    }
+
+    static void clearFrame(JFrame frame){
+      frame.getContentPane().removeAll();
+      frame.repaint();
+      frame.validate();
+    }
+
+    static void changeButton(JLabel label, String fontStyle, int fontSize, int color){
+      label.setFont(new Font(fontStyle, Font.BOLD, fontSize));
+      label.setForeground(new Color(color));
     }
 }

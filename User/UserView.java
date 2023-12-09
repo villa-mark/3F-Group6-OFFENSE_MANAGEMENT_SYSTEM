@@ -56,4 +56,20 @@ class UserView{
       label.setBounds(x, y, img.getIconWidth(), img.getIconHeight());
       panel.add(label);
     }
+
+  static void clearFrame(JFrame frame){
+      frame.getContentPane().removeAll();
+      frame.repaint();
+      frame.validate();
+    }
+
+  static void changeButton(JLabel label, String fontStyle, int fontSize, int color){
+      label.setFont(new Font(fontStyle, Font.BOLD, fontSize));
+      label.setForeground(new Color(color));
+    }
+
+  static void changeButton(JButton button, String fontStyle, int fontSize, int color){
+      button.setFont(new Font(fontStyle, Font.BOLD, fontSize));
+      button.setForeground(new Color(color));
+    }
 }
