@@ -19,9 +19,19 @@
   * Approve/Reject user created account
     > Before the user can officially create his/her account, the admin needs to approve it.
 
-  * Validate appeals or excuses
 
 [User]
   * View offense severity, and filing status(filed/not filed)
   * Can file appeal or provide explanation for their offenses
   * Can view pending excuses.
+  * Validate appeals or excuses
+
+
+#Operation
+@package offense.management
+
+To run this program in cmd, type "java offense.management.Main"
+
+#Run as ADMINISTRATOR
+> username - ADMIN
+> password - ADMIN123
