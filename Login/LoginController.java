@@ -6,6 +6,7 @@ import offense.management.component.Component;
 import offense.management.register.RegisterController;
 import offense.management.admin.AdminController;
 import offense.management.user.UserController;
+import offense.management.filehandle.FileHandleController;
 import java.awt.event.*;
 
 public class LoginController extends Component implements MouseListener{
@@ -13,6 +14,9 @@ public class LoginController extends Component implements MouseListener{
   JTextField usernameTxt;
   JPasswordField passwordTxt;
   JLabel loginButton, registerLbl;
+  static int warnMark = 0;
+  static String userHold = null;
+  static String passHold = null;
 
   public LoginController(){
     ImageIcon bgImg = new ImageIcon("login.png");
@@ -49,6 +53,21 @@ public class LoginController extends Component implements MouseListener{
     LoginView.addPanel(window, loginPanel, 10,0, bgImg.getIconWidth(), bgImg.getIconHeight(), bgC);
     LoginView.addImage(loginPanel, bgImg, 0, 0);
 
+    JLabel warningLbl;
+    if(warnMark == 1){
+      warningLbl = new JLabel("Fill Up The Blank");
+      LoginView.addLabel(loginInputPanel, warningLbl, 0, 235, 363, 30, 25, "Roboto", 0xFF0000);
+      usernameTxt.setText(userHold);
+      passwordTxt.setText(passHold);
+    }else if(warnMark == 2){
+      warningLbl = new JLabel("Account Does Not Exist");
+      LoginView.addLabel(loginInputPanel, warningLbl, 0, 235, 363, 30, 25, "Roboto", 0xFF0000);
+    }else if(warnMark == 3){
+      warningLbl = new JLabel("Wrong Password");
+      LoginView.addLabel(loginInputPanel, warningLbl, 0, 235, 363, 30, 25, "Roboto", 0xFF0000);
+      usernameTxt.setText(userHold);
+    }
+
     window.setVisible(true);
   }
 
@@ -57,15 +76,35 @@ public class LoginController extends Component implements MouseListener{
   public void mouseClicked(MouseEvent event){
       if(event.getSource() == loginButton){
         LoginView.clearFrame(window);
-        if(usernameTxt.getText().equals("ADMIN") && passwordTxt.getText().equals("ADMIN123")){
-            new AdminController();
+        if(usernameTxt.getText().isEmpty() || passwordTxt.getText().isEmpty()){
+          warnMark = 1; //fill up blank
+          userHold = usernameTxt.getText();
+          passHold = passwordTxt.getText();
+          new LoginController();
+        }
+        else if(usernameTxt.getText().equals("ADMIN") && passwordTxt.getText().equals("ADMIN123")){
+          warnMark = 0;
+          new AdminController();
         }
         else{
-          new UserController();
+          int numMark = FileHandleController.accountCheck(usernameTxt.getText(), passwordTxt.getText());
+          if(numMark == 0){
+            warnMark = 2; //Account does not Exist
+            new LoginController();
+          }else if(numMark == 1){
+            userHold = usernameTxt.getText();
+            warnMark = 3; //Account Exist but wrong password
+            new LoginController();
+          }else if(numMark == 2){
+            warnMark = 0;
+            new UserController();
+          }
         }
       }
+      
       if(event.getSource() == registerLbl){
         LoginView.clearFrame(window);
+        warnMark = 0;
         new RegisterController();
       }
   }

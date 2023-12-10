@@ -2,7 +2,7 @@ package offense.management;
 
 import offense.management.component.Component;
 import offense.management.login.LoginController;
-import javax.swing.JFrame;
+import javax.swing.*;
 import java.awt.Color;
 
 class Main extends Component{
@@ -13,6 +13,13 @@ class Main extends Component{
     window.setResizable(false);
     window.setLocationRelativeTo(null);
     window.getContentPane().setBackground(Color.black);
+
+    appealFrame.setSize(500, 500);
+    appealFrame.setLayout(null);
+    appealFrame.setDefaultLookAndFeelDecorated(true);
+    appealFrame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
+    appealFrame.setResizable(false);
+    appealFrame.getContentPane().setBackground(new Color(0xCCCCCC));
 
     new LoginController();
   }

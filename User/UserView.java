@@ -36,9 +36,10 @@ class UserView{
 
   static void addTextArea(JPanel panel, JTextArea textField, int x, int y, int width, int height, String fontStyle, int fontSize){
       textField.setBounds(x, y, width, height);
-      textField.setBackground(null);
-      textField.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.black));
+      textField.setBackground(Color.white);
       textField.setFont(new Font(fontStyle, Font.PLAIN, fontSize));
+      textField.setLineWrap(true);
+      textField.setWrapStyleWord(true);
     
       panel.add(textField); 
     }  
