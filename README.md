@@ -21,11 +21,11 @@ The "Offense Management System" is a Java application designed to streamline and
 
   ### * _[Administrator]_
    * Can file an offense against the user.
-         > Add the name of the offense
-         > Choose Severity (minor, major, serious)
-         > Date committed and date reported
-         > Add the name of an individual who reported the offense 
-         > Add the users ID
+     > Add the name of the offense
+     > Choose Severity (minor, major, serious)
+     > Date committed and date reported
+     > Add the name of an individual who reported the offense 
+     > Add the users ID
 
   * Approve/Reject user created account
     > Before the user can officially create his/her account, the admin needs to approve it.
