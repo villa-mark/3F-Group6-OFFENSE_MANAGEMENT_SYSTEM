@@ -1,12 +1,13 @@
 # OFFENSE MANAGEMENT SYSTEM
 
-## Brief Description
+### Brief Description
     
-Offense Management Systems is a Java app for administrators to file offenses, approve/reject user accounts, and validate appeals. Users can view their offense records, file appeals, and check pending excuses. The system ensures secure login and registration.
+The "Offense Management System" is a Java application designed to streamline and automate the process of managing offenses. It serves as a comprehensive tool for recording, tracking, and analyzing various types of offenses.
 
-# Features
-## Details
-### _[Login/Registration]_
+
+# Details
+   ## Features
+### * _[Login/Registration]_
   * Account Authentication
   * Register
 
