@@ -38,6 +38,7 @@ class LoginView{
       panel.setOpaque(true);
       panel.setBackground(new Color(color));
       panel.setLayout(null);  
+      panel.setOpaque(false);
 
       frame.add(panel);
     }

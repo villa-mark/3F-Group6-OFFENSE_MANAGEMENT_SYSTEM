@@ -22,7 +22,7 @@ public class UserController extends Component implements MouseListener{
 
 
   public UserController(){
-    ImageIcon bgImg = new ImageIcon("user.png");
+    ImageIcon bgImg = new ImageIcon("Images//user.png");
 
     JPanel userInfoPanel = new JPanel();
     UserView.addPanel(window, userInfoPanel, 140, 10, 490, 100, bgC);

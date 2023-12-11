@@ -19,7 +19,7 @@ public class RegisterController extends Component implements MouseListener{
   static String pass = null;
 
   public RegisterController(){
-    ImageIcon bgImg = new ImageIcon("register.png");
+    ImageIcon bgImg = new ImageIcon("Images//register.png");
 
     JPanel registerInputPanel = new JPanel();
     RegisterView.addPanel(window, registerInputPanel, 10, 140, 363, 400, bgC);

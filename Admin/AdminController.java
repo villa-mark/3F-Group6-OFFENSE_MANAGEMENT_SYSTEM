@@ -31,8 +31,8 @@ public class AdminController extends Component implements MouseListener, ActionL
 
 
   public AdminController(){
-    ImageIcon bgImg = new ImageIcon("admin.png");
-    ImageIcon bgImg2 = new ImageIcon("adminS.png");
+    ImageIcon bgImg = new ImageIcon("Images//admin.png");
+    ImageIcon bgImg2 = new ImageIcon("Images//adminS.png");
 
     JPanel optionPanel = new JPanel();
     AdminView.addPanel(window, optionPanel, 26,114, 211, 400, 0x797166);
