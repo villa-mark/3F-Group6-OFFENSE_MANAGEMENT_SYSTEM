@@ -11,7 +11,7 @@ The "Offense Management System" is a Java application designed to streamline and
   * Account Authentication
   * Register
 
-### _[Administrator]_
+### * _[Administrator]_
   * Can file an offense against the user.
              > Add the name of the offense
              > Choose Severity (minor, major, serious)
