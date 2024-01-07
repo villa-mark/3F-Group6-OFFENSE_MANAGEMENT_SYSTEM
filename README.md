@@ -1,10 +1,44 @@
 # OFFENSE MANAGEMENT SYSTEM
 
-A group project in OOP[java], That is due to on December 21, 2023 
+A group project in OOP[java]
 
 ### Brief Description About the Application
     
 The "Offense Management System" is a Java application designed to streamline and automate the process of managing offenses. It serves as a comprehensive tool for recording, tracking, and analyzing various types of offenses.
+
+### Project Requirements
+
+# GitHub 
+# Concepts
+* Object
+* Class
+* Inheritance && Aggregation
+* Polymorphism
+  * Overriding
+  * Overloading
+* Abstraction
+  * Abstract class
+  * Abstract method
+  * Interface
+* Encapsulation
+  * Package
+  * Access Modifier
+  * jar
+# Interface && Design
+# File Handling CRUD
+* Create
+* Read
+* Update
+* Delete
+# Roles
+# PowerPoint Presentation
+# UML
+# FlowChart
+# Design
+# MUC Architecure
+# 2 Data Structure
+# 2 Algorithm
+# Exception Handling
 
 
 # More Details
