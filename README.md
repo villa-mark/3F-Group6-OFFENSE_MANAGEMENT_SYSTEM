@@ -6,10 +6,10 @@ A group project in OOP[java]
     
 The "Offense Management System" is a Java application designed to streamline and automate the process of managing offenses. It serves as a comprehensive tool for recording, tracking, and analyzing various types of offenses.
 
-### Project Requirements
+# Project Requirements
 
-# GitHub 
-# Concepts
+### GitHub 
+### Concepts
 * Object
 * Class
 * Inheritance && Aggregation
@@ -24,21 +24,21 @@ The "Offense Management System" is a Java application designed to streamline and
   * Package
   * Access Modifier
   * jar
-# Interface && Design
-# File Handling CRUD
+### Interface && Design
+### File Handling CRUD
 * Create
 * Read
 * Update
 * Delete
-# Roles
-# PowerPoint Presentation
-# UML
-# FlowChart
-# Design
-# MUC Architecure
-# 2 Data Structure
-# 2 Algorithm
-# Exception Handling
+### Roles
+### PowerPoint Presentation
+### UML
+### FlowChart
+### Design
+### MUC Architecure
+### 2 Data Structure
+### 2 Algorithm
+### Exception Handling
 
 
 # More Details
