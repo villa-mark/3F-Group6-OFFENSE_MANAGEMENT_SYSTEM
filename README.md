@@ -8,46 +8,43 @@ The "Offense Management System" is a Java application designed to streamline and
 
 # Project Requirements
 
-### - GitHub _done_
+### - GitHub _[done]_
 ### - Concepts
-* Object _done_
-* Class _done_
-* Inheritance && Aggregation _done_
-* Polymorphism _done_
+* Object _[done]_
+* Class _[done]_
+* Inheritance && Aggregation _[done]_
+* Polymorphism _[done]_
   * Overriding
-  * Overloading _done_
-* Abstraction _done_
-  * Abstract class _done_
+  * Overloading _[done]_
+* Abstraction _[done]_
+  * Abstract class _[done]_
   * Abstract method
-  * Interface _done_
-* Encapsulation _done_
-  * Package _done_
-  * Access Modifier _done_
+  * Interface _[done]_
+* Encapsulation _[done]_
+  * Package _[done]_
+  * Access Modifier _[done]_
   * jar
 ### - Interface && Design
-### - File Handling CRUD _done_
-* Create _done_
-* Read _done_
-* Update _done_
-* Delete _done_
-### - Roles _done_
+### - File Handling CRUD _[done]_
+* Create _[done]_
+* Read _[done]_
+* Update _[done]_
+* Delete _[done]_
+### - atleat 3 Roles _[done]_
+* Admin
+* Student
+* Teacher
 ### - PowerPoint Presentation
 ### - UML
 ### - FlowChart
 ### - Design
 ### - MUC Architecure
-### - 2 Data Structure _done_
-### - 2 Algorithm _done_
-### - Exception Handling _done_
+### - 2 Data Structure _[done]_
+### - 2 Algorithm _[done]_
+### - Exception Handling _[done]_
 
 
-# More Details
- ### ROLES
-   * Admin
-   * Head Master
-   * Student
-   * Teacher
-   
+# More Details....
  ## Features
   ### * _[Login/Registration]_
    * Account Authentication
@@ -67,12 +64,23 @@ The "Offense Management System" is a Java application designed to streamline and
   * Decline/Accept User Appeal/Explaination
     > Validate appeals or excuses
 
-### * _[User]_
+ ### * _[User]_
   * View offense severity, and filing status(filed/not filed)
   * Can file appeal or provide explanation for their offenses
   * Can view pending excuses.
- 
 
+ ### * _[Teacher]_
+  * Can file an offense against the user.
+     > Add the name of the offense
+     > Choose Severity (minor, major, serious)
+     > Date committed and date reported
+     > Add the name of an individual who reported the offense 
+     > Add the users ID
+  * can search user through user ID, first name, last name, or full name
+  * can see all the student info
+    * Filter
+      * section
+      * batch
 
 # Operation
   #### To Operate
