@@ -8,40 +8,40 @@ The "Offense Management System" is a Java application designed to streamline and
 
 # Project Requirements
 
-### - GitHub                     _[done]_
-### - Concepts                   _[done]_
-* Object                         _[done]_
-* Class                          _[done]_
-* Inheritance && Aggregation     _[done]_
-* Polymorphism                   _[done]_
+### - GitHub....................._[done]_
+### - Concepts..................._[done]_
+* Object                         
+* Class                          
+* Inheritance && Aggregation    
+* Polymorphism                   
   * Overriding
-  * Overloading                  _[done]_
-* Abstraction                    _[done]_
-  * Abstract class               _[done]_
+  * Overloading                  
+* Abstraction                    
+  * Abstract class              
   * Abstract method
-  * Interface                    _[done]_
-* Encapsulation                  _[done]_
-  * Package                      _[done]_
-  * Access Modifier              _[done]_
-  * jar                          _[upcoming]_
-### - File Handling CRUD         _[done]_
-* Create                         _[done]_
-* Read                           _[done]_
-* Update                         _[done]_
-* Delete                         _[done]_
-### - atleat 3 Roles             _[done]_
+  * Interface                    
+* Encapsulation                  
+  * Package                     
+  * Access Modifier              
+  * jar                          
+### - File Handling CRUD........._[done]_
+* Create........................._[contain]_
+* Read..........................._[contain]_
+* Update........................._[contain]_
+* Delete........................._[contain]_
+### - atleat 3 Roles............._[done]_
 * Admin
 * Student
 * Teacher
-### - Interface && Design        _[upcoming]_
-### - PowerPoint Presentation    _[upcoming]_
-### - UML                        _[upcoming]_
-### - FlowChart                  _[upcoming]_
-### - Design                     _[upcoming]_
-### - MUC Architecure            _[upcoming]_
-### - 2 Data Structure           _[done]_
-### - 2 Algorithm                _[done]_
-### - Exception Handling         _[done]_
+### - Interface && Design........_[upcoming]_
+### - PowerPoint Presentation...._[upcoming]_
+### - UML........................_[upcoming]_
+### - FlowChart.................._[upcoming]_
+### - Design....................._[upcoming]_
+### - MUC Architecure............_[upcoming]_
+### - 2 Data Structure..........._[done]_
+### - 2 Algorithm................_[done]_
+### - Exception Handling........._[done]_
 
 
 # More Details....
@@ -70,6 +70,7 @@ The "Offense Management System" is a Java application designed to streamline and
   * View offense severity, and filing status(filed/not filed)
   * Can file appeal or provide explanation for their offenses
   * Can view pending excuses.
+  * notification
 
  ### * _[Teacher]_
   * Can file an offense against the user.
