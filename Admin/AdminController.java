@@ -16,28 +16,28 @@ import java.util.*;
 	public class AdminController extends Component implements MouseListener, ActionListener{
 	 
 	//GLOBAL DECLARATION OF COMPONENTS
-	  JLabel fileOffenseBtn, requestBtn, pendingBtn, logoutBtn, clearBtn, submitBtn;
-	  JButton[] acceptBtn;
-	  JButton[] declineBtn;
-	  JButton[] approveBtn;
-	  JButton[] rejectBtn;
-	  JTextField commitTxt, reportTxt, reportByTxt, departmentTxt, IDTxt;
-	  JTextArea addOffenseTxt;
-	  JCheckBox minorCB, majorCB, seriousCB, verySCB;
+	  private JLabel fileOffenseBtn, requestBtn, pendingBtn, logoutBtn, clearBtn, submitBtn;
+	  private JButton[] acceptBtn;
+	  private JButton[] declineBtn;
+	  private JButton[] approveBtn;
+	  private JButton[] rejectBtn;
+	  private JTextField commitTxt, reportTxt, reportByTxt, departmentTxt, IDTxt;
+	  private JTextArea addOffenseTxt;
+	  private JCheckBox minorCB, majorCB, seriousCB, verySCB;
 	  
 	  //DATA
-	  ArrayList<ArrayList<String>> pendingData;
-	  ArrayList<ArrayList<String>> appealData;
+	  private ArrayList<ArrayList<String>> pendingData;
+	  private ArrayList<ArrayList<String>> appealData;
 	  
 	  //CONTROL FLOW VARIABLES
-		  static int mark = 0;
-		  static int idCheck = 0;
-		  static String severity = "MINOR";
-		  static String offense = null;
-		  static String commit = null;
-		  static String report = null;
-		  static String reportBy = null;
-		  static String deparment = null;
+		  private static int mark = 0;
+		  private static int idCheck = 0;
+		  private static String severity = "MINOR";
+		  private static String offense = null;
+		  private static String commit = null;
+		  private static String report = null;
+		  private static String reportBy = null;
+		  private static String deparment = null;
 	
 	//CONTRUCSTOR
 	  public AdminController(){
