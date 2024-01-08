@@ -8,40 +8,40 @@ The "Offense Management System" is a Java application designed to streamline and
 
 # Project Requirements
 
-### - GitHub _[done]_
-### - Concepts
-* Object _[done]_
-* Class _[done]_
-* Inheritance && Aggregation _[done]_
-* Polymorphism _[done]_
+### - GitHub                     _[done]_
+### - Concepts                   _[done]_
+* Object                         _[done]_
+* Class                          _[done]_
+* Inheritance && Aggregation     _[done]_
+* Polymorphism                   _[done]_
   * Overriding
-  * Overloading _[done]_
-* Abstraction _[done]_
-  * Abstract class _[done]_
+  * Overloading                  _[done]_
+* Abstraction                    _[done]_
+  * Abstract class               _[done]_
   * Abstract method
-  * Interface _[done]_
-* Encapsulation _[done]_
-  * Package _[done]_
-  * Access Modifier _[done]_
-  * jar
-### - Interface && Design
-### - File Handling CRUD _[done]_
-* Create _[done]_
-* Read _[done]_
-* Update _[done]_
-* Delete _[done]_
-### - atleat 3 Roles _[done]_
+  * Interface                    _[done]_
+* Encapsulation                  _[done]_
+  * Package                      _[done]_
+  * Access Modifier              _[done]_
+  * jar                          _[upcoming]_
+### - File Handling CRUD         _[done]_
+* Create                         _[done]_
+* Read                           _[done]_
+* Update                         _[done]_
+* Delete                         _[done]_
+### - atleat 3 Roles             _[done]_
 * Admin
 * Student
 * Teacher
-### - PowerPoint Presentation
-### - UML
-### - FlowChart
-### - Design
-### - MUC Architecure
-### - 2 Data Structure _[done]_
-### - 2 Algorithm _[done]_
-### - Exception Handling _[done]_
+### - Interface && Design        _[upcoming]_
+### - PowerPoint Presentation    _[upcoming]_
+### - UML                        _[upcoming]_
+### - FlowChart                  _[upcoming]_
+### - Design                     _[upcoming]_
+### - MUC Architecure            _[upcoming]_
+### - 2 Data Structure           _[done]_
+### - 2 Algorithm                _[done]_
+### - Exception Handling         _[done]_
 
 
 # More Details....
@@ -49,6 +49,8 @@ The "Offense Management System" is a Java application designed to streamline and
   ### * _[Login/Registration]_
    * Account Authentication
    * Register
+     * Teacher
+     * Student
 
   ### * _[Administrator]_
    * Can file an offense against the user.
