@@ -11,19 +11,19 @@ import java.util.*;
 public class UserController extends Component implements MouseListener{
 
   private static int mark = 0;
-  static int explainFrame = 0;
-  static int numEx = 0;
-  JLabel logoutBtn;
-  static int markLogout = 0;
-  static JPanel logoutPanel;
-  JButton recordButton, pendingButton, 
+  private static int explainFrame = 0;
+  private static int numEx = 0;
+  private static int markLogout = 0;
+  private static JPanel logoutPanel;
+  private JLabel logoutBtn;
+  private JButton recordButton, pendingButton, 
   		  appealBtn, explainBtn, 
   		  closeBtn, submitBtn,
   		  notifClose, notifClear;
-  JLabel[] offenses;
-  JTextArea explainAppealField;
-  ArrayList<ArrayList<String>> userOffense = new ArrayList<>();
-  ArrayList<ArrayList<String>> pendingAppeal = new ArrayList<>();
+  private JLabel[] offenses;
+  private JTextArea explainAppealField;
+  private ArrayList<ArrayList<String>> userOffense = new ArrayList<>();
+  private ArrayList<ArrayList<String>> pendingAppeal = new ArrayList<>();
 
 
   public UserController(){

@@ -11,31 +11,31 @@ import offense.management.login.LoginController;
 
 public class TeacherController extends Component implements MouseListener, ActionListener{
 	//GLOBAL DECLARATION OF COMPONENTS
-	  JLabel fileOffenseBtn, searchBtn, listBtn, logoutBtn, clearBtn, submitBtn;
-	  JTextField commitTxt, reportTxt, reportByTxt, departmentTxt, IDTxt, searchUser;
-	  JTextArea addOffenseTxt;
-	  JCheckBox minorCB, majorCB, seriousCB, verySCB;
-	  JButton allBtn, filterBtn, searchUserBtn;
-	  JComboBox<String> sectionCombo, batchCombo;
+	  private JLabel fileOffenseBtn, searchBtn, listBtn, logoutBtn, clearBtn, submitBtn;
+	  private JTextField commitTxt, reportTxt, reportByTxt, departmentTxt, IDTxt, searchUser;
+	  private JTextArea addOffenseTxt;
+	  private JCheckBox minorCB, majorCB, seriousCB, verySCB;
+	  private JButton allBtn, filterBtn, searchUserBtn;
+	  private JComboBox<String> sectionCombo, batchCombo;
 	  
 	  //DATA
-	  ArrayList<String> pendingData;
-	  ArrayList<ArrayList<String>> appealData;
+	  private ArrayList<String> pendingData;
+	  private ArrayList<ArrayList<String>> appealData;
 	  
 	  //CONTROL FLOW VARIABLES
-		  static int mark = 0;
-		  static int idCheck = 0;
-		  static int allListMark = 0;
-		  static int searchMark = 0;
-		  static String severity = "MINOR";
-		  static String offense = null;
-		  static String commit = null;
-		  static String report = null;
-		  static String reportBy = null;
-		  static String deparment = null;
-		  static String searchData = null;
-		  static String section = "1A";
-		  static String batch = "30";
+		  private static int mark = 0;
+		  private static int idCheck = 0;
+		  private static int allListMark = 0;
+		  private static int searchMark = 0;
+		  private static String severity = "MINOR";
+		  private static String offense = null;
+		  private static String commit = null;
+		  private static String report = null;
+		  private static String reportBy = null;
+		  private static String deparment = null;
+		  private static String searchData = null;
+		  private static String section = "1A";
+		  private static String batch = "30";
 	
 	//CONTRUCSTOR
 	  public TeacherController(){
@@ -224,11 +224,11 @@ public class TeacherController extends Component implements MouseListener, Actio
 	    		int countIncrement = 0;
 	    		int numberExist = 0;
 	    		while(countIncrement != data.size()) {
-	    			if(searchData.equals(data.get(countIncrement).get(0)) || 
-	    					searchData.equals(data.get(countIncrement).get(1)) || 
-	    					searchData.equals(data.get(countIncrement).get(4)) || 
-	    					searchData.equals(data.get(countIncrement).get(0) + " " + 
-	    					searchData.equals(data.get(countIncrement).get(1)))) {
+
+	    			if(searchData.toLowerCase().equals(data.get(countIncrement).get(0).toLowerCase()) || 
+	    					searchData.toLowerCase().equals(data.get(countIncrement).get(1).toLowerCase()) || 
+	    					searchData.toLowerCase().equals(data.get(countIncrement).get(4).toLowerCase()) || 
+	    					searchData.toLowerCase().equals(data.get(countIncrement).get(0).toLowerCase() + " " + data.get(countIncrement).get(1).toLowerCase()) ) {
 	    				JLabel userName = new JLabel("Name: " + data.get(countIncrement).get(0) + " " + data.get(countIncrement).get(1));
 			    		TeacherView.addLabel(panelSearch, userName, 10, nameY, 495, 20, 18, "Roboto", 0x000000, 0x444444);
 			    		

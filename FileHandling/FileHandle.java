@@ -6,14 +6,14 @@ import java.util.*;
 
 class FileHandle{
 
-  static String fullName = null;
-  static String id;
-  static int offenseId = 0;
-  static String userData = "Database\\UserData.dat";
-  static String userPending = "Database\\UserPendingAccount.dat";
-  static String offenseRecord = "Database\\offenseRecord.dat";
-  static String pendingRecord = "Database\\pendingOffense.dat";
-  static String notifRecord = "Database\\notifRecord.dat";
+  private static String fullName = null;
+  private static String id;
+  private static int offenseId = 0;
+  private static String userData = "Database\\UserData.dat";
+  private static String userPending = "Database\\UserPendingAccount.dat";
+  private static String offenseRecord = "Database\\offenseRecord.dat";
+  private static String pendingRecord = "Database\\pendingOffense.dat";
+  private static String notifRecord = "Database\\notifRecord.dat";
 
   
   
