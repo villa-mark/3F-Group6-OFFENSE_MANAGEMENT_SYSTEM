@@ -33,12 +33,12 @@ The "Offense Management System" is a Java application designed to streamline and
 * Admin
 * Student
 * Teacher
-### - Interface && Design........_[upcoming]_
+### - Interface && Design........_[done]_
 ### - PowerPoint Presentation...._[upcoming]_
 ### - UML........................_[upcoming]_
 ### - FlowChart.................._[upcoming]_
-### - Design....................._[upcoming]_
-### - MUC Architecure............_[upcoming]_
+### - Design....................._[done]_
+### - MUC Architecure............_[done]_
 ### - 2 Data Structure..........._[done]_
 ### - 2 Algorithm................_[done]_
 ### - Exception Handling........._[done]_
