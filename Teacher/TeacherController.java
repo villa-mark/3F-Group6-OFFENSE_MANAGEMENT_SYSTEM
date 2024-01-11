@@ -18,10 +18,6 @@ public class TeacherController extends Component implements MouseListener, Actio
 	  private JButton allBtn, filterBtn, searchUserBtn;
 	  private JComboBox<String> sectionCombo, batchCombo;
 	  
-	  //DATA
-	  private ArrayList<String> pendingData;
-	  private ArrayList<ArrayList<String>> appealData;
-	  
 	  //CONTROL FLOW VARIABLES
 		  private static int mark = 0;
 		  private static int idCheck = 0;

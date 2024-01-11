@@ -8,7 +8,6 @@ class FileHandle{
 
   private static String fullName = null;
   private static String id;
-  private static int offenseId = 0;
   private static String userData = "Database\\UserData.dat";
   private static String userPending = "Database\\UserPendingAccount.dat";
   private static String offenseRecord = "Database\\offenseRecord.dat";
@@ -298,7 +297,7 @@ class FileHandle{
         try{
           Scanner scan = new Scanner(new File(userData));
           scan.useDelimiter("\\Z");
-          offenseId++;
+
           if(scan.next().contains(id)){
             FileWriter writer = new FileWriter(offenseRecord, true);
             writer.write(offense + "\n");

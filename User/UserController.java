@@ -13,9 +13,7 @@ public class UserController extends Component implements MouseListener{
   private static int mark = 0;
   private static int explainFrame = 0;
   private static int numEx = 0;
-  private static int markLogout = 0;
   private static JPanel logoutPanel;
-  private JLabel logoutBtn;
   private JButton recordButton, pendingButton, 
   		  appealBtn, explainBtn, 
   		  closeBtn, submitBtn,
@@ -376,7 +374,7 @@ public class UserController extends Component implements MouseListener{
         appealFrame.dispose();
         new UserController();
       }
-      if(event.getSource() == submitBtn){
+      if(event.getSource() == submitBtn && !(explainAppealField.getText().equals(""))){
         UserView.clearFrame(appealFrame);
         window.setLocationRelativeTo(null);
         explainFrame = 0;
@@ -409,11 +407,6 @@ public class UserController extends Component implements MouseListener{
           num++;
         }
       }
-      // if(event.getSource() == logoutPanel){
-      //   markLogout = 1;
-      //   UserView.clearFrame(window);
-      //   new UserController();
-      // }
       if(event.getSource() == recordButton){
         if(mark == 1){
           UserView.changeButton(recordButton, "Roboto", 32, 0xFFFFFF);
@@ -439,11 +432,6 @@ public class UserController extends Component implements MouseListener{
           num++;
         }
       }
-      // if(event.getSource() == logoutPanel){
-      //   markLogout = 0;
-      //   UserView.clearFrame(window);
-      //   new UserController();
-      // }
       if(event.getSource() == recordButton){
         if(mark == 1){
           UserView.changeButton(recordButton, "Roboto", 28, 0x626262);

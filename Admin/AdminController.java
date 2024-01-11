@@ -263,7 +263,7 @@ import java.util.*;
 
 	    	    while (num != appealData.size()) {
 
-	    	        userRequest[num] = new JLabel(appealData.get(num).get(0));
+	    	        userRequest[num] = new JLabel(appealData.get(num).get(1));
 	    	        AdminView.addLabel(pendingPanel, userRequest[num], 20, y, 278, 30, 22, "Roboto", 0xFFFFFF);
 	    	        userRequest[num].setBackground(new Color(0x5F5F5F));
 	    	        userRequest[num].setOpaque(true);
