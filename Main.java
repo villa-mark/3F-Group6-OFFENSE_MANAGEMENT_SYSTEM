@@ -14,7 +14,6 @@ package offense.management;
  */
 class Main extends Component {
 
-    @SuppressWarnings("static-access")
     public static void main(String args[]) {
     	
         // Set up the main window attributes

@@ -1,11 +1,9 @@
 /*
  * RegisterController: Manages the user registration process for a system with student and teacher roles.
- * This class extends the Component class and handles user input through mouse clicks and actions.
  * The registration process involves choosing the role (student/teacher) and entering necessary details.
- * The class uses a graphical user interface (GUI) implemented with Swing components.
  * Various control flow variables are used to determine the state of the registration process.
  * Warning messages are displayed for cases where a username already exists or if required fields are not filled.
- * Upon successful registration, user data is either added to the system or sent as a request to the administrator.
+ * Upon successful registration, user data is sent as a request to the administrator.
  */
 package offense.management.register;
 
@@ -31,6 +29,8 @@ public class RegisterController extends Component implements MouseListener, Acti
     // CONTROL FLOW VARIABLES
     private static int mark = 0;
     private static int teacherStudent = 0; // use switch panel, whether to student or to teacher
+
+    //use to hold previous data the user inputed or choosed
     private static String fname = null;
     private static String lname = null;
     private static String user = null;

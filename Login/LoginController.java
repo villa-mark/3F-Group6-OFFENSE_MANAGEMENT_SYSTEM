@@ -16,21 +16,22 @@ import java.awt.event.*;
  */
 public class LoginController extends Component implements MouseListener {
 
-    private JTextField usernameTxt;
-    private JPasswordField passwordTxt;
-    private JLabel loginButton, registerLbl;
-    private static int warnMark = 0;
-    private static String userHold = null;
-    private static String passHold = null;
+    //global set components to be accessed by the mouse listener and the constructor
+        private JTextField usernameTxt;
+        private JPasswordField passwordTxt;
+        private JLabel loginButton, registerLbl;
 
-    /**
-     * Constructs an instance of the LoginController class.
-     * Initializes the GUI components and sets up the login window.
-     */
+    //control flow variable:
+        //use to switch warning display depending to user inputed data
+        private static int warnMark = 0;
+
+    //static variable to hold previous inputed data particularly for password and username
+        private static String userHold = null;
+        private static String passHold = null;
+
+    //Constructor
     public LoginController() {
-        // Set background image for the login window
-        	ImageIcon bgImg = new ImageIcon("Images//login.png");
-
+        
         // Create the login input panel
 	        JPanel loginInputPanel = new JPanel();
 	        LoginView.addPanel(window, loginInputPanel, 10, 170, 363, 290, bgC);
@@ -62,6 +63,9 @@ public class LoginController extends Component implements MouseListener {
 	        registerLbl = new JLabel("REGISTER");
 	        LoginView.addLabel(loginRegisterPanel, registerLbl, 198, 35, 150, 20, 18, "Roboto", 0xFF0000);
 	        registerLbl.addMouseListener(this);
+
+        // Set background image for the login window
+        	ImageIcon bgImg = new ImageIcon("Images//login.png");
 
         // Create the background panel with the login image
 	        JPanel loginPanel = new JPanel();
@@ -96,17 +100,24 @@ public class LoginController extends Component implements MouseListener {
             	LoginView.clearFrame(window);
 
             if (usernameTxt.getText().isEmpty() || passwordTxt.getText().isEmpty()) {
+
                 // If any of the input fields is empty, initialize warnMark to 1
-                	warnMark = 1;
-                	
+                warnMark = 1;
+                
+                //Initialize userHold and passHold with the value the user previously inputed
                 userHold = usernameTxt.getText();
                 passHold = passwordTxt.getText();
+
                 new LoginController();
+
             } else if (usernameTxt.getText().equals("ADMIN") && passwordTxt.getText().equals("ADMIN123")) {
+                
                 // Navigate to AdminController if login as admin
-	                warnMark = 0;
-	                new AdminController();
+                warnMark = 0;
+                new AdminController();
+
             } else {
+                
                 // Check data inputted and initialize warnMark depending on the condition met
                 	int numMark = FileHandleController.accountCheck(usernameTxt.getText(), passwordTxt.getText());
                 
