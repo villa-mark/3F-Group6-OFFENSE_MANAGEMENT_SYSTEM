@@ -1,8 +1,11 @@
 package offense.management.user;
 
+//user-defined packages
 import offense.management.login.LoginController;
 import offense.management.component.Component;
 import offense.management.filehandle.FileHandleController;
+
+//pre-defined packages
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -10,9 +13,7 @@ import java.util.*;
 
 public class UserController extends Component implements MouseListener{
 
-  private static int mark = 0;
-  private static int explainFrame = 0;
-  private static int numEx = 0;
+  //global declaration of components
   private static JPanel logoutPanel;
   private JButton recordButton, pendingButton, 
   		  appealBtn, explainBtn, 
@@ -20,52 +21,65 @@ public class UserController extends Component implements MouseListener{
   		  notifClose, notifClear;
   private JLabel[] offenses;
   private JTextArea explainAppealField;
+
+  //control-flow variables
+  private static int mark = 0;
+  private static int explainFrame = 0;
+  private static int numEx = 0;
+  
+  //data structure
   private ArrayList<ArrayList<String>> userOffense = new ArrayList<>();
   private ArrayList<ArrayList<String>> pendingAppeal = new ArrayList<>();
 
-
+  //Contructors
   public UserController(){
+
+    //initializing ImageIcon
     ImageIcon bgImg = new ImageIcon("Images//user.png");
     ImageIcon notif = new ImageIcon("Images//notif.png");
     recordButton = new JButton("RECORD");
     pendingButton = new JButton("PENDING");
     
-    if(mark == 4) {
-    	JPanel notifPnl = new JPanel(null);
-        
-    	notifPnl.setBounds(200, 50, 400, 400);
-    	notifPnl.setBackground(new Color(btnC));
-        recordButton.setEnabled(false);
-        pendingButton.setEnabled(false);
-        window.add(notifPnl);
-        
-        JLabel notifLbl = new JLabel("NOTIFICATION");
-        UserView.addLabel(notifPnl, notifLbl, 120, 10, 150, 50, 20, "Roboto", 0x0fe0e0);
-        
-        JPanel notifOpen = new JPanel();
-        UserView.addPanel(notifPnl, notifOpen, 20, 75, 360, 255, bgC);
-        
-        ArrayList<ArrayList<String>> notifDataIn = new ArrayList<>();
-        FileHandleController.convertNotif2d(notifDataIn, FileHandleController.getID());
-        
-        JLabel[] notifLblDisplay = new JLabel[notifDataIn.size()];
-        int incrementNum = 0;
-        while(incrementNum != notifDataIn.size()) {
-        	notifLblDisplay[incrementNum] = new JLabel("Approved by the Admin: "+ notifDataIn.get(incrementNum).get(1));
-        	UserView.addLabel(notifOpen, notifLblDisplay[incrementNum], 10, (incrementNum * 35), 350, 30, 20, "Roboto");
-        	incrementNum++;
-        }
-        notifClose = new JButton("CLOSE");
-        UserView.addButton(notifPnl, notifClose, 40, 340, 150, 35, 25, "Roboto", bgC, 0x000000);
-        notifClose.addMouseListener(this);
-        
-        notifClear = new JButton("CLEAR");
-        UserView.addButton(notifPnl, notifClear, 210, 340, 150, 35, 25, "Roboto", bgC, 0x000000);
-        notifClear.addMouseListener(this);
-        
-        notifPnl.repaint();
-        notifPnl.revalidate();
-    }
+    //execute this block if the condition is met
+    //display the notification box
+      if(mark == 4) {
+        JPanel notifPnl = new JPanel(null);
+          
+        notifPnl.setBounds(200, 50, 400, 400);
+        notifPnl.setBackground(new Color(btnC));
+          recordButton.setEnabled(false);
+          pendingButton.setEnabled(false);
+          window.add(notifPnl);
+          
+          JLabel notifLbl = new JLabel("NOTIFICATION");
+          UserView.addLabel(notifPnl, notifLbl, 120, 10, 150, 50, 20, "Roboto", 0x0fe0e0);
+          
+          JPanel notifOpen = new JPanel();
+          UserView.addPanel(notifPnl, notifOpen, 20, 75, 360, 255, bgC);
+          
+          ArrayList<ArrayList<String>> notifDataIn = new ArrayList<>();
+          FileHandleController.convertNotif2d(notifDataIn, FileHandleController.getID());
+          
+          JLabel[] notifLblDisplay = new JLabel[notifDataIn.size()];
+          int incrementNum = 0;
+
+          while(incrementNum != notifDataIn.size()) {
+            notifLblDisplay[incrementNum] = new JLabel("Approved by the Admin: "+ notifDataIn.get(incrementNum).get(1));
+            UserView.addLabel(notifOpen, notifLblDisplay[incrementNum], 10, (incrementNum * 35), 350, 30, 20, "Roboto");
+            incrementNum++;
+          }
+
+          notifClose = new JButton("CLOSE");
+          UserView.addButton(notifPnl, notifClose, 40, 340, 150, 35, 25, "Roboto", bgC, 0x000000);
+          notifClose.addMouseListener(this);
+          
+          notifClear = new JButton("CLEAR");
+          UserView.addButton(notifPnl, notifClear, 210, 340, 150, 35, 25, "Roboto", bgC, 0x000000);
+          notifClear.addMouseListener(this);
+          
+          notifPnl.repaint();
+          notifPnl.revalidate();
+      }
     
     
     JPanel userInfoPanel = new JPanel();
@@ -154,7 +168,7 @@ public class UserController extends Component implements MouseListener{
 
     if(mark == 0 || mark == 1) {
     	recordButton.setEnabled(true);
-        pendingButton.setEnabled(true);
+      pendingButton.setEnabled(true);
     }
     recordButton.addMouseListener(this);
     pendingButton.addMouseListener(this);
