@@ -8,40 +8,40 @@ The "Offense Management System" is a Java application designed to streamline and
 
 # Project Requirements
 
-### - GitHub....................._[done]_
-### - Concepts..................._[done]_
-* Object........................._[contain]_
-* Class.........................._[contain]_                         
-* Inheritance && Aggregation....._[contain]_
-* Polymorphism..................._[contain]_                   
+### - GitHub
+### - Concepts
+* Object
+* Class                         
+* Inheritance && Aggregation
+* Polymorphism                
   * Overriding
-  * Overloading.................._[contain]_                  
-* Abstraction...................._[contain]_                    
-  * Abstract class..............._[contain]_              
-  * Abstract method.............._[contain]_
-  * Interface...................._[contain]_                    
-* Encapsulation.................._[contain]_                  
-  * Package......................_[contain]_                     
-  * Access Modifier.............._[contain]_              
-  * jar.........................._[upcoming]_                          
-### - File Handling CRUD........._[done]_
-* Create........................._[contain]_
-* Read..........................._[contain]_
-* Update........................._[contain]_
-* Delete........................._[contain]_
-### - atleat 3 Roles............._[done]_
+  * Overloading                 
+* Abstraction                   
+  * Abstract class              
+  * Abstract method
+  * Interface                   
+* Encapsulation              
+  * Package                   
+  * Access Modifier             
+  * jar                         
+### - File Handling CRUD
+* Create
+* Read
+* Update
+* Delete
+### - atleat 3 Roles
 * Admin
 * Student
 * Teacher
-### - Interface && Design........_[done]_
-### - PowerPoint Presentation...._[upcoming]_
-### - UML........................_[done]_
-### - FlowChart.................._[upcoming]_
-### - Design....................._[done]_
-### - MUC Architecure............_[done]_
-### - 2 Data Structure..........._[done]_
-### - 2 Algorithm................_[done]_
-### - Exception Handling........._[done]_
+### - Interface && Design
+### - PowerPoint Presentation
+### - UML
+### - FlowChart
+### - Design
+### - MUC Architecure
+### - 2 Data Structure
+### - 2 Algorithm
+### - Exception Handling
 
 
 # More Details....
